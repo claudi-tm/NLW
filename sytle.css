@@ -8,7 +8,7 @@
     font-size: 62.5%;
     --primary-color: hsl(170, 100%, 26%);
     --seconday-color-headline: hsl(210, 11%, 15%);
-    --secondary-color-paragraph: hsl(210, 9%, 31%)
+    --secondary-color-paragraph: hsl(210, 9%, 31%);
 }
 
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap");
@@ -65,7 +65,6 @@ button {
     color: white;
     font-size: 1.4rem;
     font-weight: 700;
-
 }
 
 img {
