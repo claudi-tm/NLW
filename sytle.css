@@ -9,6 +9,10 @@
     --primary-color: hsl(170, 100%, 26%);
     --seconday-color-headline: hsl(210, 11%, 15%);
     --secondary-color-paragraph: hsl(210, 9%, 31%);
+    --brand-beige: hsl(39, 100%, 97%);
+    --brand-green-light: hsl(148, 23%, 89%);
+
+    
 }
 
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap");
@@ -26,6 +30,7 @@ header {
     margin-top: 4.1rem;
 }
 
+
 h1 {
     font-size: 3.4rem;
     color: var(--seconday-color-headline);
@@ -37,6 +42,8 @@ h4 {
     font-size: 1.4rem;
     color: var(--primary-color);
     margin-bottom: 1.6rem;
+    font-weight: 700;
+    
 }
 
 p {
@@ -65,8 +72,54 @@ button {
     color: white;
     font-size: 1.4rem;
     font-weight: 700;
+    
 }
 
-img {
+header img {
+    width: 26.4rem;
     margin-bottom: 0rem;
+    display: block;
+    margin-inline: auto;
+    object-position: 0 2rem; /*muda a imagem de posicao*/   
 }
+
+header::before {
+    content: "";
+    width: 100vw;/*width: 100% also worked*/
+    height: 108rem;
+    background-color: var(--brand-green-light);
+    display: block;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+}
+
+.stats {
+    width: 32.7rem;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    margin-inline: auto;
+    background-color: var(--brand-beige);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 6rem;
+    border: 1px solid #DCE9E2;
+    border-radius: 0.6rem;
+}
+
+.stat h3 {
+    font-size: 4.8rem;    
+    color: var(--seconday-color-headline);
+    line-height: 130%;
+    margin-bottom: 0.4rem;
+}
+
+.stat p {
+    margin: 0;
+    color: var(--primary-color);
+    font-size: 1.6rem;
+    line-height: 150%;
+}
+
